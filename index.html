@@ -1,380 +1,406 @@
-```html
 <!DOCTYPE html>
 <!--
     MAK POWER
-    Electronics & Mobile Accessories
+    Electronics & Mobile Accessories Store
+    Location: Chhapra–Road, Garkha, Bihar 841311
 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAK POWER | Electronics & Accessories</title>
+    <title>MAK POWER | Electronics & Mobile Accessories</title>
+    
+    <!-- MAK POWER Favicon & App Icons -->
+    <link rel="icon" type="image/png" href="image/mak power logo.png">
+    <link rel="shortcut icon" type="image/png" href="image/mak power logo.png">
+    <link rel="apple-touch-icon" href="image/mak power logo.png">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="tooplate-2168-Mak_Power.css">
 </head>
 <body>
-    <!-- Floating decorative elements -->
-    <div class="float-decoration sparkle sparkle-1">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 0L22.5 17.5L40 20L22.5 22.5L20 40L17.5 22.5L0 20L17.5 17.5L20 0Z" fill="#FFB4A2" opacity="0.6"/>
-        </svg>
-    </div>
-    <div class="float-decoration sparkle sparkle-2">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15 0L17 13L30 15L17 17L15 30L13 17L0 15L13 13L15 0Z" fill="#D4C5F9" opacity="0.6"/>
-        </svg>
-    </div>
-    <div class="float-decoration sparkle sparkle-3">
-        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17.5 0L19.5 15.5L35 17.5L19.5 19.5L17.5 35L15.5 19.5L0 17.5L15.5 15.5L17.5 0Z" fill="#B8E6D5" opacity="0.6"/>
-        </svg>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span class="top-bar-item">📍 Chhapra–Road, Garkha, Bihar 841311</span>
+                <span class="top-bar-item">🕒 Open Daily: 9:00 AM – 9:00 PM</span>
+            </div>
+            <div class="top-bar-right">
+                <span class="top-bar-item">📞 <a href="tel:9942670379">+91 9942670379</a></span>
+                <span class="top-bar-item">💬 <a href="https://wa.me/919942670379?text=Hello%20MAK%20POWER!%20I%20have%20an%20enquiry." target="_blank">WhatsApp Us</a></span>
+            </div>
+        </div>
     </div>
 
-    <!-- Header -->
-    <header>
+    <!-- Header & Navigation Bar -->
+    <header class="header">
         <div class="header-wrapper">
-            <div class="logo">
-                <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="40" fill="#FFB4A2"/>
-                    <path d="M25 35L25 70M25 35L50 70L75 35M75 35L75 70" stroke="#8DC4B2" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                MAK POWER
-            </div>
-            <div class="menu-toggle" onclick="toggleMenu()">
+            <!-- Brand Logo & Title -->
+            <a href="#home" class="brand-logo-link" title="MAK POWER Home">
+                <div class="logo-icon-container">
+                    <img src="image/mak power logo.png" alt="MAK POWER Logo" class="brand-logo-img">
+                </div>
+                <div class="brand-text-wrapper">
+                    <span class="brand-name">MAK <span class="power-word">POWER</span></span>
+                    <span class="brand-tagline">Accessories & Electronics</span>
+                </div>
+            </a>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button class="menu-toggle" aria-label="Toggle Navigation Menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
+
+            <!-- Navigation Links -->
             <nav id="mainNav">
                 <a href="#home" class="active">Home</a>
-                <a href="#menu">Products</a>
-                <a href="#about">About Us</a>
+                <a href="#deals">Deals</a>
+                <a href="#products">Products</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#about">Our Store</a>
                 <a href="#contact">Contact</a>
             </nav>
+
+            <!-- Header Quick Action -->
+            <div class="header-cta-group">
+                <a href="tel:9942670379" class="header-phone-btn">
+                    <span>📞</span> 9942670379
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <div class="hero-wrapper">
-        <section class="hero" id="home">
+    <div class="hero-wrapper" id="home">
+        <section class="hero">
             <div class="hero-content">
-                <h1>Powering Your Needs, Delivering Quality!</h1>
-                <p>Discover quality mobile accessories and electronic products at competitive prices. Your trusted destination for reliable products and excellent service!</p>
-                <div class="hero-buttons">
-                    <a href="#menu" class="btn btn-primary">Explore Products</a>
-                    <a href="#about" class="btn btn-secondary">About Us</a>
+                <div class="hero-pill">
+                    <span class="hero-pill-badge">Official Store</span>
+                    <span>⚡ 100% Genuine Mobile & Tech Accessories</span>
+                </div>
+
+                <h1>Power Up Your Digital Lifestyle with <span class="highlight">MAK POWER</span></h1>
+                
+                <p class="hero-description">
+                    Discover high-speed mobile chargers, premium earbuds, heavy-duty power banks, and stylish back covers at unbeatable wholesale and retail prices in Garkha.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#products" class="btn btn-primary">
+                        <span>⚡ Explore Products</span>
+                    </a>
+                    <a href="https://wa.me/919942670379?text=Hello%20MAK%20POWER!%20I%20want%20to%20know%20about%20your%20available%20products." target="_blank" class="btn btn-whatsapp">
+                        <span>💬 WhatsApp Enquiry</span>
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <span>📍 Visit Store</span>
+                    </a>
+                </div>
+
+                <div class="hero-trust-badges">
+                    <div class="trust-item">
+                        <div class="trust-icon">✓</div>
+                        <div class="trust-text">
+                            <span class="trust-title">100% Tested</span>
+                            <span class="trust-desc">Reliable Quality</span>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">₹</div>
+                        <div class="trust-text">
+                            <span class="trust-title">Best Pricing</span>
+                            <span class="trust-desc">Wholesale & Retail</span>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">★</div>
+                        <div class="trust-text">
+                            <span class="trust-title">Top Rated</span>
+                            <span class="trust-desc">Trusted in Bihar</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="hero-image-container">
-                    <!-- Graphic 1: Electronics -->
-                    <svg class="hero-illustration active" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Smartphone -->
-                        <rect x="180" y="100" width="140" height="260" rx="20" fill="#333333"/>
-                        <rect x="190" y="120" width="120" height="220" rx="10" fill="#D4C5F9"/>
-                        <circle cx="250" cy="350" r="5" fill="#FFFFFF"/>
-                        <rect x="230" y="108" width="40" height="5" rx="2" fill="#777777"/>
 
-                        <!-- Earbuds -->
-                        <path d="M90 190C90 165 125 165 125 190V235C125 255 95 255 95 235V205" fill="#FFB4A2"/>
-                        <path d="M145 190C145 165 180 165 180 190V235C180 255 150 255 150 235V205" fill="#FFB4A2"/>
+            <!-- Hero Showcase Card -->
+            <div class="hero-visual">
+                <div class="hero-card-main">
+                    <div class="hero-img-box">
+                        <img src="image/featured-electronics.jpg" alt="MAK POWER Featured Electronics & Accessories">
+                    </div>
 
-                        <!-- Charger -->
-                        <rect x="350" y="170" width="75" height="85" rx="12" fill="#B8E6D5"/>
-                        <rect x="370" y="150" width="10" height="25" rx="3" fill="#777777"/>
-                        <rect x="395" y="150" width="10" height="25" rx="3" fill="#777777"/>
-                        <path d="M385 255V290C385 315 410 315 410 340" stroke="#8DC4B2" stroke-width="7" stroke-linecap="round"/>
+                    <!-- Floating Badges -->
+                    <div class="floating-badge badge-top-left">
+                        <div class="floating-badge-icon">⚡</div>
+                        <div class="floating-badge-text">
+                            <strong>Fast Charging</strong>
+                            <span>Up to 65W PD & Dash</span>
+                        </div>
+                    </div>
 
-                        <!-- Power Bank -->
-                        <rect x="80" y="310" width="90" height="130" rx="15" fill="#D4C5F9"/>
-                        <rect x="105" y="325" width="40" height="5" rx="2" fill="#777777"/>
-                        <circle cx="125" cy="365" r="15" fill="#8DC4B2"/>
-
-                        <!-- Decorative elements -->
-                        <path d="M100 80L105 95L120 100L105 105L100 120L95 105L80 100L95 95Z" fill="#FFB4A2"/>
-                        <path d="M400 80L405 95L420 100L405 105L400 120L395 105L380 100L395 95Z" fill="#D4C5F9"/>
-                        <circle cx="380" cy="400" r="18" fill="#B8E6D5"/>
-                    </svg>
-
-                    <!-- Graphic 2: Accessories -->
-                    <svg class="hero-illustration" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Headphones -->
-                        <path d="M100 250V190C100 100 230 100 230 190V250" stroke="#333333" stroke-width="25" fill="none"/>
-                        <rect x="80" y="220" width="45" height="100" rx="15" fill="#FFB4A2"/>
-                        <rect x="205" y="220" width="45" height="100" rx="15" fill="#FFB4A2"/>
-
-                        <!-- Speaker -->
-                        <rect x="300" y="180" width="110" height="170" rx="20" fill="#D4C5F9"/>
-                        <circle cx="355" cy="265" r="45" fill="#B8E6D5"/>
-                        <circle cx="355" cy="265" r="20" fill="#8DC4B2"/>
-                        <circle cx="355" cy="210" r="7" fill="#FFFFFF"/>
-
-                        <!-- USB Cable -->
-                        <path d="M110 390C160 430 220 430 260 390" stroke="#8DC4B2" stroke-width="12" stroke-linecap="round"/>
-                        <rect x="90" y="375" width="35" height="25" rx="5" fill="#FFB4A2"/>
-                        <rect x="250" y="375" width="35" height="25" rx="5" fill="#FFB4A2"/>
-
-                        <!-- Decorative elements -->
-                        <circle cx="300" cy="100" r="18" fill="#FFB4A2" opacity="0.7"/>
-                        <path d="M420 380L425 395L440 400L425 405L420 420L415 405L400 400L415 395Z" fill="#D4C5F9"/>
-                    </svg>
-
-                    <!-- Graphic 3: Smart Gadgets -->
-                    <svg class="hero-illustration" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Smart Watch -->
-                        <rect x="170" y="80" width="100" height="100" rx="25" fill="#333333"/>
-                        <rect x="190" y="100" width="60" height="60" rx="12" fill="#B8E6D5"/>
-                        <path d="M220 115V130L235 140" stroke="#333333" stroke-width="4" stroke-linecap="round"/>
-                        <rect x="195" y="40" width="50" height="40" rx="8" fill="#D4C5F9"/>
-                        <rect x="195" y="180" width="50" height="40" rx="8" fill="#D4C5F9"/>
-
-                        <!-- Bluetooth Speaker -->
-                        <rect x="300" y="250" width="130" height="90" rx="25" fill="#FFB4A2"/>
-                        <circle cx="340" cy="295" r="20" fill="#FFFFFF" opacity="0.7"/>
-                        <circle cx="390" cy="295" r="20" fill="#FFFFFF" opacity="0.7"/>
-
-                        <!-- Mobile Phone -->
-                        <rect x="70" y="250" width="90" height="160" rx="15" fill="#D4C5F9"/>
-                        <rect x="80" y="265" width="70" height="125" rx="8" fill="#B8E6D5"/>
-                        <circle cx="115" cy="400" r="5" fill="#FFFFFF"/>
-
-                        <!-- Decorative elements -->
-                        <path d="M370 100L375 115L390 120L375 125L370 140L365 125L350 120L365 115Z" fill="#FFB4A2"/>
-                        <circle cx="100" cy="130" r="15" fill="#B8E6D5"/>
-                        <circle cx="420" cy="200" r="12" fill="#D4C5F9"/>
-                    </svg>
+                    <div class="floating-badge badge-bottom-right">
+                        <div class="floating-badge-icon">🎧</div>
+                        <div class="floating-badge-text">
+                            <strong>HD Stereo Sound</strong>
+                            <span>Deep Bass Earbuds</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
 
-    <!-- Today's Special Section -->
-    <section class="Featured Products">
-        <div class="special-container">
-            <div style="text-align: center;">
-                <span class="special-badge">⚡ SPECIAL DEALS ⚡</span>
-                <h2 class="section-title" style="margin-bottom: 0.5rem;">Today's Best Deals</h2>
-                <p class="section-subtitle">Great Products at Great Prices – Explore Our Offers!</p>
+    <!-- Special Deals Section -->
+    <section class="special-deals" id="deals">
+        <div class="deals-container">
+            <div class="section-header">
+                <span class="section-badge">⚡ Limited Time Deals</span>
+                <h2 class="section-title">Today's Featured <span>Deals & Offers</span></h2>
+                <p class="section-subtitle">Grab premium accessories at special promotional prices. Limited stock available daily!</p>
             </div>
 
-            <div class="special-content">
-                <div class="special-image">
-                    <img src="image/featured-electronics.jpg" alt="Featured Electronics Products">
-                    <span class="special-tag">⭐ Featured Product</span>
-                    <div class="stock-indicator">
-                        <div>Quality Products at Competitive Prices</div>
-                        <div class="stock-bar">
-                            <div class="stock-fill" style="width: 75%;"></div>
-                        </div>
-                    </div>
+            <div class="deals-card">
+                <div class="deals-image-wrapper">
+                    <img src="image/featured-electronics.jpg" alt="MAK POWER Featured Products">
+                    <span class="deals-tag">🔥 Best Deal Today</span>
                 </div>
 
-                <div class="special-details">
-                    <h2>Explore Our Featured Products</h2>
-
-                    <div class="special-price-row">
-                        <span class="special-original-price">MAK POWER</span>
-                        <span class="special-price">Best Deals</span>
-                        <span class="special-discount">Great Value</span>
+                <div class="deals-content">
+                    <div class="deals-price-row">
+                        <span class="deals-price">Special In-Store Discount</span>
+                        <span class="deals-badge">✓ In Stock</span>
                     </div>
 
-                    <p class="special-description">
-                        Explore our wide range of quality mobile accessories and electronic products. From chargers and cables to earbuds, headphones, power banks, and more, we offer reliable products for your everyday needs. Visit our store and discover great value with dependable service.
+                    <h2>MAK POWER All-in-One Tech Collection</h2>
+
+                    <p class="deals-desc">
+                        Upgrade your everyday gadgets with our highest-rated mobile chargers, heavy-duty braided data cables, crystal-clear TWS earbuds, and portable power solutions. Tested for performance and durability.
                     </p>
 
-                    <div class="countdown-container">
-                        <div class="countdown-label">✨ Why Shop With Us?</div>
-                        <div class="countdown">
-                            <div class="countdown-item">
-                                <span class="countdown-number">01</span>
-                                <span class="countdown-label-text">Quality</span>
+                    <!-- Real Live Countdown Timer -->
+                    <div class="deal-timer-box">
+                        <div class="deal-timer-header">
+                            <span>⏳ Offer Valid Till Midnight:</span>
+                            <span style="color: var(--primary);">Daily Refreshed Deals</span>
+                        </div>
+                        <div class="timer-digits">
+                            <div class="timer-unit">
+                                <span class="timer-val" id="timer-hours">08</span>
+                                <span class="timer-lbl">Hours</span>
                             </div>
-                            <div class="countdown-item">
-                                <span class="countdown-number">02</span>
-                                <span class="countdown-label-text">Value</span>
+                            <div class="timer-unit">
+                                <span class="timer-val" id="timer-mins">45</span>
+                                <span class="timer-lbl">Minutes</span>
                             </div>
-                            <div class="countdown-item">
-                                <span class="countdown-number">03</span>
-                                <span class="countdown-label-text">Service</span>
-                            </div>
-                            <div class="countdown-item">
-                                <span class="countdown-number">04</span>
-                                <span class="countdown-label-text">Trust</span>
+                            <div class="timer-unit">
+                                <span class="timer-val" id="timer-secs">20</span>
+                                <span class="timer-lbl">Seconds</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="special-cta">
-                        <a href="#menu" class="btn-special"><span>🛍️ Explore Products</span></a>
-                        <a href="#contact" class="btn-notify"><span>📞</span></a>
+                    <div class="deals-cta-row">
+                        <a href="#" class="btn btn-primary btn-enquire-whatsapp" data-product="Today's Special Deals Combo">
+                            <span>💬 Enquire for Best Deal</span>
+                        </a>
+                        <a href="tel:9942670379" class="btn btn-secondary">
+                            <span>📞 Call 9942670379</span>
+                        </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <h2 class="section-title">Why Choose MAK POWER?</h2>
-        <p class="section-subtitle">Quality Products. Fair Prices. Reliable Service.</p>
-        <div class="features-grid">
-            <div class="feature-card">
-                <svg class="feature-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="40" fill="#FFD4C4"/>
-                    <path d="M30 45L45 60L70 35" stroke="#8DC4B2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <h3>Quality Products</h3>
-                <p>We offer carefully selected products to meet your everyday electronic and mobile accessory needs.</p>
-            </div>
-            <div class="feature-card">
-                <svg class="feature-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M50 20L60 45H80L65 58L72 83L50 68L28 83L35 58L20 45H40L50 20Z" fill="#FFB8D2"/>
-                </svg>
-                <h3>Affordable Prices</h3>
-                <p>Find useful products at competitive and reasonable prices for better value.</p>
-            </div>
-            <div class="feature-card">
-                <svg class="feature-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="35" cy="40" r="20" fill="#B8E6D5"/>
-                    <circle cx="65" cy="40" r="20" fill="#D4C5F9"/>
-                    <circle cx="50" cy="60" r="20" fill="#FFB4A2"/>
-                </svg>
-                <h3>Customer Satisfaction</h3>
-                <p>We focus on helpful support, dependable service, and a smooth shopping experience.</p>
             </div>
         </div>
     </section>
 
     <!-- Products Section -->
-    <section class="menu" id="menu">
-        <div class="menu-container">
-            <h2 class="section-title">Explore Our Products</h2>
-            <p class="section-subtitle">Discover our range of mobile accessories and electronic products.</p>
-            <div class="menu-grid">
+    <section class="products-section" id="products">
+        <div class="products-container">
+            <div class="section-header">
+                <span class="section-badge">🛍️ Our Collection</span>
+                <h2 class="section-title">Explore <span>MAK POWER</span> Products</h2>
+                <p class="section-subtitle">Browse through our wide assortment of high-grade mobile essentials and audio equipment.</p>
+            </div>
 
-                <!-- Product 1 -->
-                <div class="menu-item">
-                    <div class="menu-item-image">
+            <!-- Category Filter Tabs -->
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="audio">Audio & Sound</button>
+                <button class="filter-btn" data-filter="charging">Chargers & Cables</button>
+                <button class="filter-btn" data-filter="power">Power Banks</button>
+                <button class="filter-btn" data-filter="protection">Covers & Protection</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+
+                <!-- Product 1: Back Covers -->
+                <div class="product-card" data-category="protection">
+                    <div class="product-card-img-box">
                         <img src="image/back-covers.jpg" alt="Premium Mobile Back Covers">
-                        <div class="menu-item-overlay"></div>
-                        <span class="menu-item-badge">⭐ Popular</span>
+                        <span class="product-badge popular">Popular</span>
+                        <div class="product-rating"><span class="star">★</span> 4.9</div>
                     </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3>Premium Mobile Back Covers</h3>
-                            <span class="menu-item-price">Enquire</span>
+                    <div class="product-card-body">
+                        <span class="product-category-meta">Protection & Style</span>
+                        <h3 class="product-title">Premium Mobile Back Covers</h3>
+                        <p class="product-desc">Shockproof, ultra-slim, and designer phone covers available for all popular Android and iPhone models.</p>
+                        <div class="product-tags">
+                            <span class="product-tag">🛡️ Drop Protection</span>
+                            <span class="product-tag">✨ Anti-Fingerprint</span>
+                            <span class="product-tag">📱 All Models</span>
                         </div>
-                        <p>Explore stylish and durable mobile back covers in different designs, colours, and models to protect your smartphone.</p>
-                        <div class="menu-item-tags">
-                            <span class="tag">📱 Stylish Designs</span>
-                            <span class="tag">🛡️ Protection</span>
+                        <div class="product-card-footer">
+                            <a href="#" class="btn btn-primary btn-enquire-whatsapp" data-product="Premium Mobile Back Covers">
+                                <span>Enquire on WhatsApp 💬</span>
+                            </a>
+                            <a href="tel:9942670379" class="btn btn-secondary btn-icon-only" title="Call Shop">
+                                <span>📞</span>
+                            </a>
                         </div>
-                        <button class="add-to-cart"><span>Enquire Now ♡</span></button>
                     </div>
                 </div>
 
-                <!-- Product 2 -->
-                <div class="menu-item">
-                    <div class="menu-item-image">
+                <!-- Product 2: Bluetooth Earbuds -->
+                <div class="product-card" data-category="audio">
+                    <div class="product-card-img-box">
                         <img src="image/bluetooth-earbuds.jpg" alt="Wireless Bluetooth Earbuds">
-                        <div class="menu-item-overlay"></div>
-                        <span class="menu-item-badge">🎧 Popular</span>
+                        <span class="product-badge popular">Top Seller</span>
+                        <div class="product-rating"><span class="star">★</span> 4.9</div>
                     </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3>Wireless Bluetooth Earbuds</h3>
-                            <span class="menu-item-price">Enquire</span>
+                    <div class="product-card-body">
+                        <span class="product-category-meta">True Wireless Audio</span>
+                        <h3 class="product-title">Wireless Bluetooth Earbuds</h3>
+                        <p class="product-desc">Crystal clear calling, active noise isolation, low latency gaming mode, and ergonomic comfortable fit.</p>
+                        <div class="product-tags">
+                            <span class="product-tag">🎵 Deep Bass</span>
+                            <span class="product-tag">🔋 30h Playtime</span>
+                            <span class="product-tag">📶 BT 5.3</span>
                         </div>
-                        <p>Enjoy music and calls with wireless Bluetooth earbuds designed for convenient everyday use.</p>
-                        <div class="menu-item-tags">
-                            <span class="tag">🎵 Wireless Audio</span>
-                            <span class="tag">🔋 Portable</span>
+                        <div class="product-card-footer">
+                            <a href="#" class="btn btn-primary btn-enquire-whatsapp" data-product="Wireless Bluetooth Earbuds">
+                                <span>Enquire on WhatsApp 💬</span>
+                            </a>
+                            <a href="tel:9942670379" class="btn btn-secondary btn-icon-only" title="Call Shop">
+                                <span>📞</span>
+                            </a>
                         </div>
-                        <button class="add-to-cart"><span>Enquire Now ♡</span></button>
-                    </div>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="image/mobile-chargers.jpg" alt="Mobile Chargers and Cables">
-                        <div class="menu-item-overlay"></div>
-                    </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3>Mobile Chargers & Cables</h3>
-                            <span class="menu-item-price">Enquire</span>
-                        </div>
-                        <p>Find convenient charging solutions, adapters, and cables for compatible smartphones and devices.</p>
-                        <div class="menu-item-tags">
-                            <span class="tag">🔌 Charging</span>
-                            <span class="tag">⚡ Everyday Use</span>
-                        </div>
-                        <button class="add-to-cart"><span>Enquire Now ♡</span></button>
                     </div>
                 </div>
 
-                <!-- Product 4 -->
-                <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="image/headphones.jpg" alt="Wireless Headphones">
-                        <div class="menu-item-overlay"></div>
+                <!-- Product 3: Mobile Chargers & Cables -->
+                <div class="product-card" data-category="charging">
+                    <div class="product-card-img-box">
+                        <img src="image/mobile-chargers.jpg" alt="Fast Mobile Chargers and Cables">
+                        <span class="product-badge popular">Must Have</span>
+                        <div class="product-rating"><span class="star">★</span> 4.8</div>
                     </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3>Headphones</h3>
-                            <span class="menu-item-price">Enquire</span>
+                    <div class="product-card-body">
+                        <span class="product-category-meta">Charging Solutions</span>
+                        <h3 class="product-title">Fast Chargers & Data Cables</h3>
+                        <p class="product-desc">Super fast charging adapters with Type-C, Lightning, and Micro USB cables engineered for safety and speed.</p>
+                        <div class="product-tags">
+                            <span class="product-tag">⚡ Fast Charging</span>
+                            <span class="product-tag">🔌 Braided Cable</span>
+                            <span class="product-tag">🔒 Surge Protected</span>
                         </div>
-                        <p>Explore headphones for music, entertainment, online classes, and everyday listening.</p>
-                        <div class="menu-item-tags">
-                            <span class="tag">🎧 Audio</span>
-                            <span class="tag">🎶 Music</span>
+                        <div class="product-card-footer">
+                            <a href="#" class="btn btn-primary btn-enquire-whatsapp" data-product="Fast Chargers and Data Cables">
+                                <span>Enquire on WhatsApp 💬</span>
+                            </a>
+                            <a href="tel:9942670379" class="btn btn-secondary btn-icon-only" title="Call Shop">
+                                <span>📞</span>
+                            </a>
                         </div>
-                        <button class="add-to-cart"><span>Enquire Now ♡</span></button>
                     </div>
                 </div>
 
-                <!-- Product 5 -->
-                <div class="menu-item">
-                    <div class="menu-item-image">
+                <!-- Product 4: Over-Ear Headphones -->
+                <div class="product-card" data-category="audio">
+                    <div class="product-card-img-box">
+                        <img src="image/headphones.jpg" alt="Wireless Over-Ear Headphones">
+                        <span class="product-badge">Studio Bass</span>
+                        <div class="product-rating"><span class="star">★</span> 4.8</div>
+                    </div>
+                    <div class="product-card-body">
+                        <span class="product-category-meta">Over-Ear Headsets</span>
+                        <h3 class="product-title">Wireless Stereo Headphones</h3>
+                        <p class="product-desc">Comfortable cushioned earcups, immersive soundstage, dual wireless and AUX modes for long hours.</p>
+                        <div class="product-tags">
+                            <span class="product-tag">🎧 HD Drivers</span>
+                            <span class="product-tag">🔋 Long Battery</span>
+                            <span class="product-tag">🎤 In-built Mic</span>
+                        </div>
+                        <div class="product-card-footer">
+                            <a href="#" class="btn btn-primary btn-enquire-whatsapp" data-product="Wireless Stereo Headphones">
+                                <span>Enquire on WhatsApp 💬</span>
+                            </a>
+                            <a href="tel:9942670379" class="btn btn-secondary btn-icon-only" title="Call Shop">
+                                <span>📞</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Portable Power Banks -->
+                <div class="product-card" data-category="power">
+                    <div class="product-card-img-box">
                         <img src="image/power-banks.jpg" alt="Portable Power Banks">
-                        <div class="menu-item-overlay"></div>
-                        <span class="menu-item-badge">🔋 Useful</span>
+                        <span class="product-badge popular">Heavy Duty</span>
+                        <div class="product-rating"><span class="star">★</span> 4.9</div>
                     </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3>Portable Power Banks</h3>
-                            <span class="menu-item-price">Enquire</span>
+                    <div class="product-card-body">
+                        <span class="product-category-meta">Portable Power</span>
+                        <h3 class="product-title">High-Capacity Power Banks</h3>
+                        <p class="product-desc">Charge multiple devices on the go with dual output ports, LED battery indicator, and fast re-charge support.</p>
+                        <div class="product-tags">
+                            <span class="product-tag">🔋 10000/20000 mAh</span>
+                            <span class="product-tag">⚡ Multi-Port</span>
+                            <span class="product-tag">✈️ Flight Safe</span>
                         </div>
-                        <p>Stay connected while travelling with portable power banks for compatible mobile devices.</p>
-                        <div class="menu-item-tags">
-                            <span class="tag">🔋 Portable</span>
-                            <span class="tag">📱 Convenience</span>
+                        <div class="product-card-footer">
+                            <a href="#" class="btn btn-primary btn-enquire-whatsapp" data-product="High-Capacity Power Banks">
+                                <span>Enquire on WhatsApp 💬</span>
+                            </a>
+                            <a href="tel:9942670379" class="btn btn-secondary btn-icon-only" title="Call Shop">
+                                <span>📞</span>
+                            </a>
                         </div>
-                        <button class="add-to-cart"><span>Enquire Now ♡</span></button>
                     </div>
                 </div>
 
-                <!-- Product 6 -->
-                <div class="menu-item">
-                    <div class="menu-item-image">
+                <!-- Product 6: Bluetooth Speakers -->
+                <div class="product-card" data-category="audio">
+                    <div class="product-card-img-box">
                         <img src="image/bluetooth-speakers.jpg" alt="Bluetooth Speakers">
-                        <div class="menu-item-overlay"></div>
-                        <span class="menu-item-badge">🔊 Popular</span>
+                        <span class="product-badge">Party Bass</span>
+                        <div class="product-rating"><span class="star">★</span> 4.9</div>
                     </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3>Bluetooth Speakers</h3>
-                            <span class="menu-item-price">Enquire</span>
+                    <div class="product-card-body">
+                        <span class="product-category-meta">Portable Speakers</span>
+                        <h3 class="product-title">Portable Bluetooth Speakers</h3>
+                        <p class="product-desc">Compact body, booming stereo sound, punchy bass, FM/TF card support, and water-resistant splash protection.</p>
+                        <div class="product-tags">
+                            <span class="product-tag">🔊 360° Sound</span>
+                            <span class="product-tag">💦 Splashproof</span>
+                            <span class="product-tag">📻 Multi-Input</span>
                         </div>
-                        <p>Discover portable Bluetooth speakers for music at home, outdoors, and on the go.</p>
-                        <div class="menu-item-tags">
-                            <span class="tag">🔊 Sound</span>
-                            <span class="tag">📶 Bluetooth</span>
+                        <div class="product-card-footer">
+                            <a href="#" class="btn btn-primary btn-enquire-whatsapp" data-product="Portable Bluetooth Speakers">
+                                <span>Enquire on WhatsApp 💬</span>
+                            </a>
+                            <a href="tel:9942670379" class="btn btn-secondary btn-icon-only" title="Call Shop">
+                                <span>📞</span>
+                            </a>
                         </div>
-                        <button class="add-to-cart"><span>Enquire Now ♡</span></button>
                     </div>
                 </div>
 
@@ -382,103 +408,213 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="about-content">
-            <div class="about-text">
-                <h2>About MAK POWER</h2>
-                <p>Welcome to MAK POWER, your destination for mobile accessories and electronic products. We aim to provide useful products that make everyday life easier and more convenient.</p>
-                <p>From mobile back covers and chargers to earbuds, headphones, and other accessories, we offer a range of products to meet different customer needs.</p>
-                <p>Our focus is on product quality, reasonable prices, and helpful customer service. Visit our store and explore our available products.</p>
-                <a href="#contact" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Visit Our Store</a>
+    <!-- Features / Why Choose Section -->
+    <section class="features-section" id="why-us">
+        <div class="features-container">
+            <div class="section-header">
+                <span class="section-badge">✨ Why Choose Us</span>
+                <h2 class="section-title">The <span>MAK POWER</span> Promise</h2>
+                <p class="section-subtitle">We believe in providing long-lasting, genuine products backed by dependable local customer service.</p>
             </div>
-            <div class="about-image">
-                <img src="image/mak-power-shop.jpg" alt="MAK POWER Store" style="width: 100%; height: auto; border-radius: 20px;">
-            </div>
-        </div>
-    </section>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter">
-        <div class="newsletter-container">
-            <div class="newsletter-content">
-                <div class="newsletter-icon">📱</div>
-                <h2>Stay Connected with MAK POWER!</h2>
-                <p>Get updates about our latest products, new arrivals, and special offers. Stay connected with MAK POWER!</p>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper">⚡</div>
+                    <h3>100% Tested Quality</h3>
+                    <p>Every charger, cable, and earphone is tested before delivery to ensure zero defects and maximum durability.</p>
+                </div>
 
-                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for connecting with MAK POWER!');">
-                    <input
-                        type="email"
-                        class="newsletter-input"
-                        placeholder="Enter your email address"
-                        required
-                    >
-                    <button type="submit" class="newsletter-submit">Subscribe ✨</button>
-                </form>
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper">💰</div>
+                    <h3>Fair & Honest Prices</h3>
+                    <p>Enjoy wholesale-competitive rates for personal shoppers and bulk buyers with transparent pricing.</p>
+                </div>
 
-                <div class="newsletter-benefits">
-                    <div class="newsletter-benefit">Latest Product Updates</div>
-                    <div class="newsletter-benefit">New Arrivals</div>
-                    <div class="newsletter-benefit">Special Offers</div>
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper">🛡️</div>
+                    <h3>Warranty Support</h3>
+                    <p>Direct counter warranty and swift replacement assistance so you can purchase with total peace of mind.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper">📍</div>
+                    <h3>Local & Trusted</h3>
+                    <p>Proudly serving Garkha and surrounding Saran region with honest guidance and customer satisfaction.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="footer-content">
+    <!-- About Section & Store Location -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-grid">
+                <div class="about-image-column">
+                    <div class="about-image-card">
+                        <img src="image/mak-power-shop.jpg" alt="MAK POWER Store Exterior & Interior in Garkha">
+                        <div class="about-store-badge">
+                            <div class="store-badge-info">
+                                <h4>Visit MAK POWER Store</h4>
+                                <p>Chhapra–Road, Garkha, Bihar</p>
+                            </div>
+                            <a href="tel:9942670379" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem;">Call Shop</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-text-column">
+                    <span class="section-badge">🏬 Visit Our Store</span>
+                    <h2>Your Trusted Hub for All Tech & Mobile Needs</h2>
+                    <p>
+                        Welcome to <strong>MAK POWER</strong>, your one-stop electronics and accessories destination located on Chhapra–Road in Garkha. We bring you the latest mobile accessories designed to make life smoother, faster, and more connected.
+                    </p>
+                    <p>
+                        Whether you need an emergency fast charger, heavy-duty phone protection, crystal-clear bluetooth audio, or accessories for your mobile devices, our helpful store team is here to assist you with the right fit at the right price.
+                    </p>
+
+                    <div class="store-highlights">
+                        <div class="store-highlight-item">
+                            <span>✓</span> Instant Demo & Testing
+                        </div>
+                        <div class="store-highlight-item">
+                            <span>✓</span> Wide Range of Phone Brands
+                        </div>
+                        <div class="store-highlight-item">
+                            <span>✓</span> Bulk & Wholesale Available
+                        </div>
+                        <div class="store-highlight-item">
+                            <span>✓</span> Friendly Local Support
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 1rem;">
+                        <a href="tel:9942670379" class="btn btn-primary">
+                            <span>📞 Call 9942670379</span>
+                        </a>
+                        <a href="https://wa.me/919942670379?text=Hello%20MAK%20POWER!%20Where%20is%20your%20store%20located%20in%20Garkha?" target="_blank" class="btn btn-whatsapp">
+                            <span>💬 Get Store Location</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter / Connect Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-inner">
+            <div class="newsletter-icon">⚡</div>
+            <h2>Stay Connected with MAK POWER</h2>
+            <p>Get exclusive alerts on newly arrived electronic accessories, flash festival discounts, and special product releases.</p>
+
+            <form class="newsletter-form-wrapper">
+                <input type="email" placeholder="Enter your email address or phone..." required>
+                <button type="submit">Subscribe ⚡</button>
+            </form>
+
+            <div class="newsletter-perks">
+                <span>✓ New Stock Alerts</span>
+                <span>✓ Festival Offers</span>
+                <span>✓ No Spam Guaranteed</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="main-footer" id="contact">
+        <div class="footer-container">
             <div class="footer-grid">
-                <div class="footer-section">
-                    <h3>Visit Us</h3>
-                    <p>MAK POWER<br>Chhapra–Road<br>Garkha, Bihar 841311</p>
-                    <p>Visit our store for available products.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <a href="tel:9942670379">📞 9942670379</a>
-                    <a href="mailto:rishbahkr9942@gmail.com">✉️ rishbahkr9942@gmail.com</a>
-                    <div class="social-links">
-                        <a href="#" aria-label="Instagram">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#8DC4B2">
-                                <rect x="2" y="2" width="20" height="20" rx="5" stroke="#8DC4B2" stroke-width="2" fill="none"/>
-                                <circle cx="12" cy="12" r="4" stroke="#8DC4B2" stroke-width="2" fill="none"/>
-                                <circle cx="18" cy="6" r="1" fill="#8DC4B2"/>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Facebook">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#8DC4B2">
-                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Twitter">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#8DC4B2">
-                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="YouTube">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#8DC4B2">
-                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
-                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#FFF8F0"/>
-                            </svg>
-                        </a>
+                <!-- Brand Info -->
+                <div class="footer-brand">
+                    <a href="#home" class="brand-logo-link">
+                        <div class="logo-icon-container">
+                            <img src="image/mak power logo.png" alt="MAK POWER Logo" class="brand-logo-img">
+                        </div>
+                        <div class="brand-text-wrapper">
+                            <span class="brand-name">MAK <span class="power-word">POWER</span></span>
+                            <span class="brand-tagline">Electronics & Accessories</span>
+                        </div>
+                    </a>
+                    <p>
+                        Your trusted electronics retail store in Garkha, Bihar. Delivering quality chargers, cables, earbuds, power banks, and smartphone accessories at honest prices.
+                    </p>
+                    <div class="social-links-row">
+                        <a href="tel:9942670379" class="social-btn" title="Phone">📞</a>
+                        <a href="https://wa.me/919942670379" target="_blank" class="social-btn" title="WhatsApp">💬</a>
+                        <a href="mailto:rishbahkr9942@gmail.com" class="social-btn" title="Email">✉️</a>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h3>MAK POWER</h3>
-                    <p>Quality Products</p>
-                    <p>Affordable Prices</p>
-                    <p>Reliable Service</p>
-                    <p style="margin-top: 1rem; font-size: 0.9rem;">📱 Your Everyday Electronics Store</p>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#deals">Today's Deals</a></li>
+                        <li><a href="#products">Product Catalog</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#about">About Our Store</a></li>
+                    </ul>
+                </div>
+
+                <!-- Product Categories -->
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#products">Mobile Chargers & Adapters</a></li>
+                        <li><a href="#products">Bluetooth Earbuds (TWS)</a></li>
+                        <li><a href="#products">Heavy Duty Power Banks</a></li>
+                        <li><a href="#products">Designer Back Covers</a></li>
+                        <li><a href="#products">Wireless Headphones</a></li>
+                        <li><a href="#products">Bluetooth Party Speakers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Visit Info -->
+                <div class="footer-column">
+                    <h3>Visit Our Shop</h3>
+                    <ul class="footer-contact-list">
+                        <li class="footer-contact-item">
+                            <span class="footer-contact-icon">📍</span>
+                            <span>MAK POWER, Chhapra–Road, Garkha, Bihar 841311</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <span class="footer-contact-icon">📞</span>
+                            <a href="tel:9942670379" style="color: #cbd5e1; font-weight: 700;">+91 9942670379</a>
+                        </li>
+                        <li class="footer-contact-item">
+                            <span class="footer-contact-icon">✉️</span>
+                            <a href="mailto:rishbahkr9942@gmail.com" style="color: #cbd5e1;">rishbahkr9942@gmail.com</a>
+                        </li>
+                        <li class="footer-contact-item">
+                            <span class="footer-contact-icon">🕒</span>
+                            <span>Monday – Sunday: 9:00 AM – 9:00 PM</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="copyright">
+
+            <div class="footer-bottom">
                 <p>© 2026 MAK POWER. All Rights Reserved.</p>
-                <p style="margin-top: 0.5rem;">Designed by <a href="https://www.tooplate.com" target="_blank" rel="nofollow" style="color: #B5EAD7; text-decoration: none; font-weight: 600;">Tooplate</a></p>
+                <p>Designed with care for MAK POWER • Garkha, Bihar</p>
             </div>
         </div>
     </footer>
+
+    <!-- Floating Quick Actions (WhatsApp & Call) -->
+    <div class="floating-actions">
+        <a href="https://wa.me/919942670379?text=Hello%20MAK%20POWER!%20I%20want%20to%20enquire%20about%20your%20products." target="_blank" class="floating-action-btn whatsapp" title="Chat on WhatsApp">
+            <span class="pulse-ring"></span>
+            💬
+            <span class="floating-tooltip">Chat on WhatsApp</span>
+        </a>
+        <a href="tel:9942670379" class="floating-action-btn call" title="Call MAK POWER">
+            📞
+            <span class="floating-tooltip">Call Store: 9942670379</span>
+        </a>
+    </div>
+
+    <!-- Scripts -->
     <script src="tooplate-2168-Mak_Power.js"></script>
 </body>
 </html>
-```
